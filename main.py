@@ -15,7 +15,7 @@ class Data_library:
     def __init__(self, data_path):
         self.path_data_file = data_path
 
-    def search_book_by_id(self, id: str) -> int:
+    def search_book_by_id(self, id: str) -> tuple[int, list]:
         with open(self.path_data_file, "r", encoding="utf-8") as file:
             data = json.load(file)
             count = 0

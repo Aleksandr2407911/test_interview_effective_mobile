@@ -42,8 +42,7 @@ class StatusNotAvailable(Exception):
 
     def __str__(self):
         return f"{self.message})"
-    
-    
+
 
 class BookAlreadyExist(Exception):
     def __init__(self, message="Book is already exist"):
